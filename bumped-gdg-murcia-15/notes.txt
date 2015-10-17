@@ -1,0 +1,70 @@
+1]
+
+2]
+
+a little brief about the talk purpose.
+
+3]
+
+it's me!
+
+4]
+
+important understand MY context to understand the purpose of the project.
+
+JS is a very little language. The power of the language is in the depedency manager.
+Inject dependencies is the base of JS core.
+
+7]
+
+Jon have more than 900 packages published in npm.
+Jon projects are downloaded more than 145 million times a month
+Jon contribute with Google, Twitter, Adobe
+
+8]
+
+Have a plan.
+
+9]
+
+Automatize all the things.
+
+10]
+
+Write software to help you write software.
+
+First make easy generate the scaffold of the project. (yo-git)
+
+Once that I have the control of my project, I created something easy to integrate with whatever
+project
+
+11] 
+
+I created bumped for this purpose. Bumped is a CLI tool to automatize the maintain taks of a project.
+
+12]
+
+Basically is designed for make easy integrate with whatever project (npm) from now.
+
+basic bumped actions:
+
+- intialize a config file
+- autodetect or add files into the config.
+- set properties over the config files.
+- increment the version and sync over the config files.
+
+second level: PLUGINS
+
+Plugins are the really power of the project. With plugins you connect other third software as hooks
+
+You have pre and post hooks. They looks and conditions to check before and after publish a new version
+of your software.
+
+Also, bumped add quality in your software. Many actions related with a profesional software are automatically appens in your projects if you use bumped, for example:
+
+- Generate a Changelog.
+- Check that all depencies are ok.
+- Lint config files and sort them.
+- Deploy automation is cooooool.
+
+Instead of write bash scripts for do stuff, convert the bash script into a plugin and have the advantages to integrate into bumped system. More shareable and crossover.
