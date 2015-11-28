@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Big</title>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <link href='prism.css' rel='stylesheet' type='text/css' />
+    <style type="text/css">
+    * {
+    box-sizing: border-box;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 150%;
+    }
+    body {
+    font-family:'Helvetica';
+    background:#272822;
+    background-size:cover;
+    background-repeat: no-repeat;
+    color:#fff;
+    margin:0;
+    padding:0;
+    font-weight:bold;
+    overflow: hidden;
+    }
+    body.background-fullscreen {
+      background-repeat: no-repeat;
+      background-color: white;
+    }
+    h1, h2, h3, p {
+    margin:0;
+    }
+    span code {
+      background: #333;
+      border: 1.5px solid #777;
+      border-radius: 5px;
+    }
+    p {
+      margin-bottom: .5rem;
+    }
+    em {
+    color: #000;
+    background: #fff;
+    font-style: normal;
+    }
+    a {
+    background:#34d0e7;
+    color:#000;
+    text-decoration:none;
+    }
+    img {
+    width:100%;
+    }
+    div {
+    cursor:pointer;
+    cursor:hand;
+    position:absolute;
+    top:0px;
+    left:0px;
+    padding:75px;
+    }
+    .abs-center {
+      margin: auto;
+      position: absolute;
+      top: 0; left: 0;
+      right: 0;
+    }
+    .font-big {
+    font-size: 110%;
+    }
+    .font-medium {
+    font-size: 75%
+    }
+    small,
+    .font-small {
+    font-size: 45%;
+    }
+    .mts { margin-top: 15px; }
+    .mtl { margin-top: 30px;}
+    .mtxl { margin-top: 60px;}
+
+    .mbs { margin-bottom: 15px; }
+    .mbl { margin-bottom: 30px;}
+    .mbxl { margin-bottom: 60px;}
+    div.imageText {
+    text-shadow:0px 0px 5px rgba(0,0,0,0.2);
+    }
+    notes {
+    display:none;
+    }
+    /* normally not good, but ok in context of full screen directional navigation */
+    :focus {
+    outline: 0;
+    }
+    .nobreak {
+    white-space:pre;
+    }
+    .noright {
+      right:0;
+    }
+
+    </style>
+    <script src='big.js'></script>
+    <script src='prism.js'></script>
+  </head>
+  <body>
+
+    <div><img src="img/1.jpg">
+      <span>Invisible <em>Perfomance</em></span>
+      <br>
+      <small class="small nobreak">@Kikobeats</small>
+    </div>
+
+    <div data-bodyclass='background-fullscreen'><img src="img/me.png"></div>
+
+    <div><img src="img/what.png"></div>
+
+    <div>
+      <pre><code class="language-js">
+for (var i = arr.length - 1; i >= 0; i--) {
+      </code></pre>
+    </div>
+
+    <div>
+      <pre><code class="language-js">
+var testVal = 0;
+var n = iterations % 8;
+while (n--) {
+ testVal++;
+}
+
+// `value ^ 0` is the same as `Math.floor` for positive
+// numbers and `Math.ceil` for negative numbers
+
+n = (iterations / 8) ^ 0;
+while (n--) {
+ testVal++;
+ testVal++;
+ testVal++;
+ testVal++;
+ testVal++;
+ testVal++;
+ testVal++;
+ testVal++;
+}
+      </code></pre>
+    </div>
+
+    <div><img src="img/stop.gif"></div>
+
+    <div>
+      <span><em>Invisible</em> for me is...</span>
+    </div>
+
+    <div><em>highlevel</em> code...</div>
+    <div>...with <em>considerations</em></div>
+
+        <div>
+          <pre><code class="language-js">
+[1, 2, 3, 4, 5].forEach(function(elem) {
+          </code></pre>
+        </div>
+
+    <div>
+      <span>What's considerations?</span>
+    </div>
+
+    <div><img src="img/back0.gif"><u>always</u> <code><em>use strict</em></code></div>
+
+    <div class="noright"><img src="img/back1.gif"><em>use strict</em> <br> is native</div>
+    <div class="noright"><img src="img/back2.gif"><em>use strict</em> <br> Don't allow you use <code>delete</code></div>
+    <div class="noright"><img src="img/back3.gif"><em>use strict</em> <br> Say you when you unused variables</div>
+    <div class="noright"><img src="img/back4.gif"><em>use strict</em> <br> Say you when you duplicated keys</div>
+    <div class="noright"><img src="img/friend.png"><em>use strict</em> <br> is your friend</div>
+
+<div class="font-big">
+<pre><code class="language-js">
+$ node --use_strict main.js
+</code></pre>
+</div>
+
+    <div><img src="img/John.gif">
+      <span><em>Lookup table</em> over <code>if/else</code> or <code>switch</code> </span>
+    </div>
+        <div class="font-big">
+          <pre><code class="language-js">
+              if (city === 'Murcia') {
+               return 30;
+              } else if(city === 'Madrid') {
+               return 15;
+              } else if(city === 'Barcelona') {
+               return 20;
+              } else
+               return 5;
+          </code></pre>
+        </div>
+
+        <div>
+          <pre><code class="language-js">
+                          switch(city) {
+                          case 'Murcia':
+                            return 30;
+                          case 'Madrid':
+                            return 15;
+                          case 'Barcelona':
+                            return 20;
+                          default:
+                            return 5;
+                          }
+          </code></pre>
+        </div>
+
+        <div>
+          <pre><code class="language-js">
+            var distance {
+              Murcia: 30,
+              Madrid: 15,
+              Barcelona: 20
+            }
+
+            var defaultDistance = 5
+
+            return distance[city] || defaultDistance
+          </code></pre>
+        </div>
+
+    <div><img src="img/memento.gif">Memoizaton</div>
+
+<div>
+<pre><code class="language-js">
+      var cityOne = 'Murcia'
+      var cityTwo = 'Madrid'
+
+      return getDistance(cityOne, cityTwo)
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+        var cache = {};
+
+        var cityOne = 'Murcia'
+        var cityTwo = 'Madrid'
+        var routeName = cityOne + cityTwo;
+
+        if (!cache[routeName])
+          cache[routeName] = getDistance(cityOne, cityTwo);
+
+        return cache[routeName];
+</code></pre>
+</div>
+
+    <div><img src="img/math.gif"><em>Math</em> over libs</div>
+
+    <div class="noright">
+      <img src="img/math1.png">
+    </div>
+
+    <div class="noright">
+      <img src="img/math2.png">
+    </div>
+
+    <div><img src="img/code.gif">setup (correctly) <em>variables scope</em></div>
+
+    <div class="noright"><img src="img/scope.png"></div>
+
+    <div class="noright"><img src="img/sense.gif">RegExp with <em>sense</em></div>
+
+<div>
+<pre><code class="language-js">
+var endsWithSemiColon = /;$/.test(str)
+</code></pre>
+</div>
+<div>
+
+<pre><code class="language-js">
+// FIXME: Write a regex that doesn't depend of the
+// string length
+var endsWithSemiColon = /;$/.test(str)
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+var endsWithSemiColon = str.charAt(str.length - 1) == ';'
+</code></pre>
+</div>
+
+<div><img src="img/regexfail.png"></div>
+
+<div><img src="img/avoide.gif">Avoid <em>.bind</em></div>
+
+<div>
+<pre><code class="language-js">
+fn.call(this, stuff) // alternative 1
+var _this = this     // alternative 2
+_.bind(fn)           // alternative 3
+</code></pre>
+</div>
+
+<div><img src="img/avoid.gif">Avoid Function <em>Constructor</em></div>
+<div><img src="img/eric.jpeg">SERIOUSLY</div>
+<div><img src="img/eric.jpeg">why <code>new</code>?</div>
+<div><img src="img/eric.jpeg">Java !== JavaScript</div>
+<div><img src="img/eric.jpeg">OO !== OLOO
+  <notes>
+    OLOO — Objects Linking to Other Objects)
+    Prototypal Inheritance
+    FUNCTIONAL FRIENDLY
+  </notes>
+</div>
+<div><img src="img/eric.jpeg"><em>Composition</em> over Inheritance
+<notes>
+  JavaScript doesn’t need constructor functions because any function can return a new object. With dynamic object extension, object literals and `Object.create()`, we have everything we need — with none of the mess. And `this` behaves just like it does in any other function. Hurray!
+</notes>
+</div>
+
+<div class="font-medium">
+  "The problem with object-oriented languages is they’ve got all this implicit environment that they carry around with them. You wanted a banana but what you got was a gorilla holding the banana and the entire jungle." ~ Joe Armstrong
+</div>
+
+<div>
+<pre><code class="language-js">
+let Animal = function(){}
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+let Animal = function(overwrite) {
+  return Object.assign({
+    animalType: 'animal',
+
+    describe () {
+      return `An ${this.animalType} with ${this.furColor} fur,
+        ${this.legs} legs, and a ${this.tail} tail.`;
+    }
+  }, overwrite)
+}
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+let mickey = Animal({
+  legs: 4,
+  tail: 'long, skinny',
+  furColor: 'white',
+  animalType: 'mouse',
+  hungry: false  // it's magic!
+})
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+let mouseFactory = function mouseFactory () {
+};
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+let mouseFactory = function mouseFactory () {
+  let secret = 'secret agent' // private values!
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+let mouseFactory = function mouseFactory () {
+  let secret = 'secret agent';
+
+  // "inheritance"
+  return Object.assign(Animal(), {
+    animalType: 'mouse',
+    furColor: 'white',
+    legs: 4,
+    tail: 'long, skinny',
+    profession () {
+      return secret;
+    }
+  });
+};
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+let james = mouseFactory();
+</code></pre>
+</div>
+
+<div><img src="img/james.jpg"></div>
+
+<div>what about <em>multiple inheritance</em>?</div>
+<div>SO EASY</div>
+
+<div>
+<pre><code class="language-js">
+var ninja = require('ninja');
+var mouse = require('mouse');
+var wingsuit = require('wingsuit');
+var skydiving = require('skydiving');
+
+var skydivingNinjaMouseWithWingsuit = Object.assign({}, // create a new object
+  skydiving, ninja, mouse, wingsuit); // copy all the awesome to it.
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+// jQuery exposes a factory to users. John Resig has written about the choice to use a
+// factory and prototype extension rather than a class. Basically, it boils down to
+// the fact that he didn’t want callers to have to type `new` every time they
+// made a selection. What would that have looked like?
+
+// new $('body')
+$('body')
+</code></pre>
+</div>
+
+<div>
+<pre><code class="language-js">
+/*
+How to extend the jQuery prototype:
+So difficult.
+Brain hurts.
+ouch.
+*/
+
+jQuery.fn.megaCalendarWidget = megaCalendarWidget;
+
+// omg I'm so glad that's over.
+</code></pre>
+</div>
+
+<div><img src="img/eric.jpeg">http.createServer()</div>
+<div><img src="img/eric.jpeg">fs.createReadStream()</div>
+<div><img src="img/eric.jpeg">React.createClass()</div>
+<div><img src="img/eric.jpeg">express()</div>
+
+<div><img src="img/spiderman.jpg">Good code is <em>simple</em>.
+<notes>Easier to read and to write. No more wrong design taxonomies</notes>
+</div>
+
+<div><img src="img/spiderman.jpg">Good code is <em>flexible</em>.
+<notes>Switch from new instances to recycling object pools or proxies? No problem</notes>
+</div>
+
+<div><img src="img/spiderman.jpg">Good code is  <em>powerful & expressive</em>.
+<notes>Inherit from multiple ancestors? Inherit private state? No problem.</notes>
+</div>
+
+<div>THANKS!</div>
+</body>
+</html>
