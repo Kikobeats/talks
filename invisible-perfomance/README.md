@@ -11,6 +11,7 @@
 - [Let's Write Fast JavaScript @ Mahdi Dibaiee](https://medium.com/the-javascript-collection/lets-write-fast-javascript-2b03c5575d9e#.49mfqp46v)
 - [How the Grinch stole array.length access @ Vyacheslav Egorov](http://mrale.ph/blog/2014/12/24/array-length-caching.html)
 - [What's up with monomorphism? @ Vyacheslav Egorov](http://mrale.ph/blog/2015/01/11/whats-up-with-monomorphism.html)
+- [standard](http://standardjs.com/) –  JavaScript Standard Style — One Style to Rule Them All.
 
 *In general [mrale.ph](http://mrale.ph) is INCREDIBLE.*
 
