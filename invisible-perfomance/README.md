@@ -19,6 +19,7 @@
 - [v8-perf](https://github.com/thlorenz/v8-perf) – Notes and resources related to v8 and thus Node.js performance.
 - [JS Mythbusters](https://github.com/Kikobeats/javascript-mythbusters) – STHAP javascript, where is my perfomance? 
 - [JSInspect](https://github.com/danielstjules/jsinspect) – Detect copy-pasted and structurally similar code.
+- [LRU Cache](https://github.com/isaacs/node-lru-cache) – A cache object that deletes the least-recently-used items.
 
 ## Books
 
